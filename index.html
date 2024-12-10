@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Agência de Viagens - Viagem+</title>
+</head>
+<body>
+    <header class="container-fluid text-center p-2" style="background-color: coral;">
+        <nav class="navbar navbar-expand-lg" style="background-color: coral;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem+</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <h1>Venha realizar a viagem dos seus sonhos!</h1> -->
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel/rio-de-janeiro.jpg" class="d-block w-100" alt="Rio de Janeiro">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apreciar a vista do Rio de Janeiro</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel/salvador.jpg" class="d-block w-100" alt="Salvador">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Caminhar pelo pelourinho em Salvador</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel/ouro-preto.jpg" class="d-block w-100" alt="Ouro Preto">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conhecer as Igrejas de Ouro Preto</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section class="container-fluid text-center p-5">
+        <h2>Conheça nossos pacotes</h2>
+        <div class="card-group">
+          <div class="card text" style="background-color: coral;">
+            <img src="img/Capadocia-Turquia.jpg" class="card-img-top" alt="Capadocia">
+            <div class="card-body">
+              <h5 class="card-title">Capadócia</h5>
+              <h2 class="card-subtitle">R$ 5.000,00</h2>
+            </div>
+            <p class="card-text"><small class="text-body-secondary">Em até 24x</small></p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
+
+          </div>
+          <div class="card text" style="background-color: coral;">
+            <img src="img/times-square.jpg" class="card-img-top" alt="Nova York">
+            <div class="card-body">
+              <h5 class="card-title">Nova York</h5>
+              <h2 class="card-subtitle">R$ 10.000,00</h2>
+            </div>
+            <p class="card-text"><small class="text-body-secondary">Em até 24x</small></p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
+          </div>
+          <div class="card text" style="background-color: coral;">
+            <img src="img/londres.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Londres</h5>
+              <h2 class="card-subtitle">R$ 15.000,00</h2>
+            </div>
+            <p class="card-text"><small class="text-body-secondary">Em até 24x</small></p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
+          </div>
+        </div>
+    </section>
+    <section class="container-fluid text-xl-center p-5" style="background-color: coral;">
+        <h2>Taxa de Serviços</h2>
+        <table class="table table-info table-striped table-hover border-sucess">
+            <thead class="table-dark">
+                <tr>
+                <th>Serviço</th>
+                <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                <td>Reserva de Hotel</td>
+                <td>R$ 500,00</td>
+                </tr>
+            
+                <tr>
+                <td>Compra de Passagens</td>
+                <td>R$ 1200,00</td>
+                </tr>
+                
+                <tr>
+                <td>Aluguel de Carros</td>
+                <td>R$ 800,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section> 
+    <section class="container-fluid  bg-light p-5">
+        <h2 class="text-center">Faça já seu orçamento!</h2>
+        <form action="" method="GET">
+
+            <fieldset>  
+                <legend>Dados pessoais: </legend>
+
+                <div class="mb-3">   
+                    <label class="form-label" for="nome">
+                        Nome:   
+                    </label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+
+                <div class="mb-3">   
+                    <label class="form-label" for="dataIda">
+                        Data de ida: 
+                    </label>
+                    <input type="date" class="form-control" id="dataIda" name="dataIda" required>
+                </div>   
+
+                <div class="mb-3">  
+                    <label class="form-label" for="dataVolta">
+                        Data da volta: 
+                    </label>
+                    <input type="date" class="form-control" id="dataVolta" name="dataVolta" required>
+                </div>  
+
+                <div class="mb-3"> 
+                    <label class="form-label" for="email">
+                        E-mail: </label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="passagem" value="Passagens" required>
+                    <label class="form-check-label" for="passagem">
+                        Compra de passagens 
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reserva" value="Reserva" required>
+                    <label class="form-check-label" for="reserva">
+                        Reserva de hospedagem
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="veiculos" value="Veiculos" required>
+                    <label class="form-check-label" for="veiculos">
+                        Reserva de Veículos
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista" required>Á vista</option>
+                    <option value="cincoVezes" required>5x sem juros</option>
+                    <option value="dezVezes" selected required>10x sem juros</option>
+                </select>
+            </fieldset><br>
+
+            <button class="btn btn-secondary">Salvar</button><br><br>
+            
+
+        </form>
+    </section>
+    <footer  class="container-fluid text-center p-4" style="background-color: coral;">
+        Desenvolvido por Mateus R.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="exampleModalLabel">Suas compras:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Produto adicionado ao seu carrinho!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+        <a type="button" class="btn btn-success" href="checkout.html">Finalizar Compra</a>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
